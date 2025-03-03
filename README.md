@@ -18,8 +18,8 @@ Materi Training
 
   * Password Management
 
-    * Forget Password
-    * Password Security
+    * Password Storage
+    * Password Reset
   
   * Authorization
   * Session Management
