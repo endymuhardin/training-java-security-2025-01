@@ -22,6 +22,7 @@ Materi Training
     * Password Security
   
   * Authorization
+  * Session Management
 
 * OWASP Top 10 In-Depth
 * OWASP WebGoat
