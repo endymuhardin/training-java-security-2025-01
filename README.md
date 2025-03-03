@@ -11,7 +11,17 @@ Materi Training
   * Symmetric vs Asymmetric Encryption
   * Public Key Infrastructure
   * HTTPS Protocol
-  * Password Security
+  * Authentication
+
+    * Multi Factor Authentication
+    * Non-human authentication
+
+  * Password Management
+
+    * Forget Password
+    * Password Security
+  
+  * Authorization
 
 * OWASP Top 10 In-Depth
 * OWASP WebGoat
