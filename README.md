@@ -100,6 +100,8 @@ docker compose -f docker-compose-keycloak.yml up
 
 ### Flow Implicit ###
 
+[![Flow Implicit](img/oauth-implicit.png)](img/oauth-implicit.png)
+
 1. Buat implicit client di Keycloak
 
     [![Implicit client](img/create-client-implicit.png)](img/create-client-implicit.png)
@@ -121,6 +123,18 @@ docker compose -f docker-compose-keycloak.yml up
     https://example.com/#session_state=25d571a9-6a1a-4d2d-809c-ba9c8eee8344&iss=http%3A%2F%2Flocalhost%3A20000%2Frealms%2Fpelatihan&access_token=eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJaV3kxM2N4eWJhcDVzckd0R1hNRlQzU2Z4VDM1bHJuMllNRVRRNXpPNzRRIn0.eyJleHAiOjE3NDEwNzA4NTAsImlhdCI6MTc0MTA2OTk1MCwiYXV0aF90aW1lIjoxNzQxMDY5OTUwLCJqdGkiOiJhYjdkYjI5Zi0xYWRkLTRhZGQtOGVhNS01OWFjMWUzNTZhNzkiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjIwMDAwL3JlYWxtcy9wZWxhdGloYW4iLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZjBkMDI2YmQtOTE5Yy00NzQxLWIzMzctNWJiZDlkYTM4YzJkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBsaWthc2ktYWJzZW4iLCJzaWQiOiIyNWQ1NzFhOS02YTFhLTRkMmQtODA5Yy1iYTljOGVlZTgzNDQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vZXhhbXBsZS5jb20iXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLXBlbGF0aWhhbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IlVzZXIgMDAxIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidXNlcjAwMSIsImdpdmVuX25hbWUiOiJVc2VyIiwiZmFtaWx5X25hbWUiOiIwMDEiLCJlbWFpbCI6InVzZXIwMDFAeW9wbWFpbC5jb20ifQ.auegNh0NWnr6gFzE1DiFRaCoiJ1V5C6vwbFtBaPTlT3tGLsivqyz6anPhQ1rBZKtatW_34pdKipYL2tfWMVPPz8EK_eS16KPmcCo-mo7Irddgsd3s426fzVgGkI62BOqP90xq0fETX4KhsXygqlP6jTqv7PJVGuAYsjnPcgm2b3BPfCmgX1Tgacb4PKdPIQf5Gm6Hiw4Beh4KlGpRFukiBryWtx0SXoDL6RD6zusw8uhBf1tvgzaOtFVOE6EA9TZ0An2HfDCgjSX5Hq5o36-Uqr76EFwljGL9CS-qkSYS6Qfc8jvI_O4uIBtazDVoxuNddsnxzNjMyDRF_VpPcreUQ&token_type=Bearer&expires_in=900
     ```
 
+### Flow Resource Owner Password ###
+
+[![Resource Owner Password](img/resource-owner-password.png)](img/resource-owner-password.png)
+
+### Flow Client Credentials ###
+
+[![Client Credentials](img/client-credentials.png)](img/client-credentials.png)
+
+### Flow Device ###
+
+[![Device](img/device-flow.png)](img/device-flow.png)
+
 # Referensi #
 
 * [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
@@ -130,4 +144,6 @@ docker compose -f docker-compose-keycloak.yml up
 * [Seri Video Application Security](https://youtube.com/playlist?list=PL9oC_cq7OYbwClMMWLTgXr3zz9sQ_JW76&si=j41nD0cjekUu8eNy)
 * [Spesifikasi OAuth 2](https://datatracker.ietf.org/doc/html/rfc6749)
 * [Spesifikasi PKCE](https://www.rfc-editor.org/rfc/rfc7636)
+* [OAuth for Device](https://datatracker.ietf.org/doc/html/rfc8628)
 * [Best Practices OAuth 2](https://datatracker.ietf.org/doc/html/rfc9700)
+* [OWASP Web Goat](https://owasp.org/www-project-webgoat/)
