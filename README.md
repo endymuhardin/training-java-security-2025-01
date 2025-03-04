@@ -29,6 +29,12 @@ Materi Training
 * SAST
 * DAST
 
+## Menjalankan Keycloak ##
+
+```
+docker compose -f docker-compose-keycloak.yml up
+```
+
 # Referensi #
 
 * [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
