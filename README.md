@@ -135,6 +135,36 @@ docker compose -f docker-compose-keycloak.yml up
 
 [![Device](img/device-flow.png)](img/device-flow.png)
 
+
+## Menjalankan OWASP WebGoat ##
+
+[OWASP WebGoat](https://owasp.org/www-project-webgoat/) adalah aplikasi yang memiliki banyak vulnerabilities, diperuntukkan untuk mempelajari OWASP Top Ten.
+
+Untuk menjalankan aplikasinya, kita gunakan Docker dengan command berikut:
+
+```
+docker run -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 -e TZ=Asia/Jakarta webgoat/webgoat
+```
+
+## Menjalankan ZAP Proxy ##
+
+[ZAP Proxy](https://www.zaproxy.org/) adalah aplikasi Dynamic Application Security Test (DAST).
+
+ZAP bisa dijalankan dengan Docker sebagai berikut
+
+
+* Linux / MacOS
+
+```
+docker run -p 18080:8080 -p 18090:8090 -v ${PWD}:/zap/wrk/:rw -t zaproxy/zap-stable zap-webswing.sh
+```
+
+* Windows
+
+```
+docker run -p 18080:8080 -p 18090:8090 -v %cd%:/zap/wrk/:rw -t zaproxy/zap-stable zap-webswing.sh
+```
+
 # Referensi #
 
 * [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
